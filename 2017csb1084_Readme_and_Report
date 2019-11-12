@@ -1,0 +1,34 @@
+1. Unzib 2017csb1084lab1 folder and extract all files.
+2. Open required software (e.g. Anaconda jupyter notebook) and run 2017csb1084_lab1_sol.py
+3. Then go to the output folder which contains all 4 segments for each of the 3 different images
+4. Console will show the final images stored in 3*4 matrix.
+
+
+Discussion/Report:
+
+
+Final results:
+1. Water coins
+			Images are segmented i.e. coins and water are separated with different color.
+			Best result came with 3 segments.
+			Coins are properly separated from water .(coins are in Reddish brown color while water is light green).
+
+2. Jump
+			Images are segmented i.e. man, snow and rest background are separated with different color.
+			Best result came with 5 segments.
+			Man is properly separated from snow and background .(snow is in light green color while dark background is in reddish brown color and light background is light blue).
+
+3. Tiger
+			Images are segmented i.e. tiger and grass/land are separated with different color.
+			Best result came with 5 segments.
+			Tiger is properly separated from grass and land .(tiger is in red & blue color while land is in reddish color and grass is in green & blue color, some part of river is shown in black).
+
+
+I have learnt how EM iteration algorithm work and how KMeans algorithm cluster.
+AS iteration no. increases mean and sigma of different colors starts converging to the actual means and sigmas.
+If the initial guess is nearer to mu and sigma results are better.
+In this case we have taken mu as (1/nsegments).
+We added a noise initially to see the results.
+Finally all 12 convergence/last_iteration_image is stored in 3*4 matrix to displat the final result.
+At max 20 EM iterations are taken.
+Some of the images converges before all iteration completely because of less mean and deviation difference.
